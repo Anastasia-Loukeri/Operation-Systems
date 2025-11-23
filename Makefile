@@ -1,4 +1,4 @@
-# Ορισμός Μεταβλητών (Variables)
+# Ορισμός Μεταβλητών 
 CC = gcc
 # CFLAGS: Σημαίες μεταγλωττιστή
 CFLAGS = -Wall
@@ -10,7 +10,7 @@ LIBS = -lreadline
 TARGET = tinyshell
 SOURCE = tinyshell.c
 
-# 1. Κανόνας 'all' (Ο βασικός στόχος)
+# 1. Κανόνας 'all' 
 all: $(TARGET)
 
 # 2. Κανόνας Δημιουργίας Εκτελέσιμου
@@ -19,5 +19,4 @@ all: $(TARGET)
 $(TARGET): $(SOURCE)
 	$(CC) $(CFLAGS) $(SOURCE) -o $(TARGET) $(LIBS)
 
-# 3. Κανόνας 'clean' (για καθαρισμό του φακέλου)
-# Εκτελείται με την εντολή 'make clean'
+
